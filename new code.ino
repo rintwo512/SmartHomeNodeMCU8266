@@ -3,6 +3,7 @@
 By : Rinto Harahap
 
 Modul IoT 101
+NodeMCU ESP8266
 
 Untuk cara integrasi dengan apk blynk bisa kirim email ke : ryntooh@gmail.com
 
