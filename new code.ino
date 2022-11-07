@@ -1,7 +1,18 @@
+/* 
+
+By : Rinto Harahap
+
+Modul IoT 101
+
+Untuk cara integrasi dengan apk blynk bisa kirim email ke : ryntooh@gmail.com
+
+*/
+
+
 
 #define BLYNK_TEMPLATE_ID "TMPL1ov1xbJZ"
 #define BLYNK_DEVICE_NAME "Smart Home"
-#define BLYNK_AUTH_TOKEN "bG6ROuRQ4qPRS_3TOy3l5__kOvtGR7-4"
+#define BLYNK_AUTH_TOKEN "bG6ROuRQ4qPRS_3TOy3l5__kOvtGR7-4" s
 #define BLYNK_PRINT Serial
 
 #include <ESP8266WiFi.h>
@@ -9,8 +20,8 @@
 
 char auth[] = BLYNK_AUTH_TOKEN;
 
-char ssid[] = "RH";
-char pass[] = "makassar92";
+char ssid[] = "SSID";
+char pass[] = "PASSWORD";
 
 #define trigPin D1
 #define echoPin D2
@@ -31,8 +42,8 @@ void setup()
 {
   Serial.begin(115200);
  
-  pinMode(2, OUTPUT); // Initialise digital pin 2 as an output pin
-  pinMode(0, OUTPUT); // Initialise digital pin 2 as an output pin
+  pinMode(2, OUTPUT); // RELAY A
+  pinMode(0, OUTPUT); // RELAY B
 
   Blynk.begin(auth, ssid, pass);
 
