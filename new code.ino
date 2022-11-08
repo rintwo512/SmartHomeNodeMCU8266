@@ -71,7 +71,7 @@ void setup()
 }
 
 
-BLYNK_WRITE(V0) 
+BLYNK_WRITE(V0) {
     if (param.asInt() == 1)
     {        
         digitalWrite(2, LOW);
